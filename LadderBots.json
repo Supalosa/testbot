@@ -1,0 +1,12 @@
+{
+  "Bots": {
+    "testbot": {
+      "Race": "Terran",
+      "Type": "Java",
+      "RootPath": "./",
+      "FileName": "testbot.jar",
+      "Debug": true,
+      "SurrenderPhrase": "pineapple"
+    }
+  }
+}
