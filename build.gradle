@@ -13,7 +13,7 @@ repositories {
 
 jar {
     manifest {
-        attributes 'Main-Class': 'com.supalosa.testbot.LadderMain'
+        attributes 'Main-Class': 'com.supalosa.LadderMain'
     }
 
     from {
@@ -31,7 +31,7 @@ task buildZip(type: Zip, group: "deploy") {
 }
 
 shadowJar {
-    archiveBaseName.set(name)
+    archiveBaseName.set(rootProject.name)
     archiveClassifier.set('')
     archiveVersion.set('')
     transform(com.github.jengelman.gradle.plugins.shadow.transformers.AppendingTransformer) {
